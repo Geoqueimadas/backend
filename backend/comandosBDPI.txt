@@ -37,6 +37,14 @@ CREATE TABLE public."Cadastro"
     PRIMARY KEY ("ID")
 );
 
+create table formulario (
+	
+	id serial primary key not null,
+	nome varchar(100) not null,
+	email varchar(100) not null,
+	endereco varchar(100) not null
+)
+
 ALTER TABLE IF EXISTS public."Cadastro"
     OWNER to postgres;
 
